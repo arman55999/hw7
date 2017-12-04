@@ -1,0 +1,39 @@
+//ArrayReverse
+
+int[] numlist = {1,2,3,4,5};
+
+for(int i = 0; i < numlist.length / 2; i++)
+{
+    int temp = numlist[i];
+    numlist[i] = numlist[numlist.length - i - 1];
+    numlist[numlist.length - i - 1] = temp;
+}
+
+
+
+//Factorial with recursion
+
+int fact(int n)
+    {
+        int result;
+       if(n==0 || n==1)
+         return 1;
+
+       result = fact(n-1) * n;
+       return result;
+    }
+
+	
+//Factorcial with loop
+
+int num = 5;
+        int fact = 1;
+        for(int i = 1; i <= num; i++)
+        {
+            fact = fact * i;
+        }
+        System.out.println("Factorial of "+number+" is: "+fact);
+    }
+}
+
+
